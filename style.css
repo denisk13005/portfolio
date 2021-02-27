@@ -10,6 +10,7 @@ body{
     height: 100%;
     width: 100%;
     font-family: "lemonada"; 
+    background-color: rgb(153, 163, 175);
     background-image: url("img/fond3.jpg") ;
     background-size: 100% 100%;
 
@@ -22,7 +23,7 @@ header{
     text-align: center;  
     width: 98%;
     overflow: hidden;  
-    box-shadow: 10px 10px 10px rgb(156, 184, 92);
+    box-shadow: 10px 10px 10px rgb(70, 77, 82);
     border-radius: 20px;
     margin: auto;
 }  
@@ -45,7 +46,7 @@ a{
     
          
     text-decoration: none;   
-    color:black;     
+    color:rgb(187,187,187);     
    
 
 } 
@@ -63,7 +64,7 @@ section{
     border-radius:20px ;
     width: 98%;
     margin: 12px auto 12px;
-
+    color: rgb(0, 0, 0);
 }
 .image{
     background-color: rgb(155, 226, 226);
@@ -111,10 +112,7 @@ a:hover{
 .photo_dk, .lkd{
     margin-top: 50px ;
 }
-.email{
-    color : black;
     
-}
     
 
 
