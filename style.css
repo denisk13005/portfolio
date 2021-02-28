@@ -11,8 +11,11 @@ body{
     width: 100%;
     font-family: "lemonada"; 
     background-color: rgb(153, 163, 175);
-    background-image: url("img/fond3.jpg") ;
-    background-size: 100% 100%;
+    background-image: url("img/fond3.jpg")  ;
+    background-size: 100% 100%; /*etend le fond a 100 % de la longueur et de la largeur */
+    background-attachment: fixed; /*fixe le fond d'ecran en cas de scroll*/
+    
+    
 
 }
 header{
@@ -51,9 +54,11 @@ a{
 
 } 
 .parcours{
+    
     text-align: center;
 } 
 .histoire{
+    
     text-align: center;
 }  
 section{
@@ -67,6 +72,7 @@ section{
     color: rgb(0, 0, 0);
 }
 .image{
+    
     background-color: rgb(155, 226, 226);
     width: 98%;
     margin:  auto ;
@@ -74,21 +80,26 @@ section{
     overflow: hidden; 
     box-shadow: 10px 10px 10px rgb(70, 77, 82);
 }
-.projets {
-    
+.projets {    
     text-align: center;
 }
 .img1,.img2{
     display: flex;
     justify-content: space-around;
 }
+.img__casin, .img__meteo, .img__amazon, .img__lulu{
+    width: 80px;
+    height: 80px;
+}
 .footer{
     display: flex;
     justify-content: space-around;
-    overflow: hidden;
+    
+    
 } 
+
 footer div img{  
-    margin-top: auto;
+    
     width: 80px;
     height: 90px;
     border-radius: 50%;
@@ -102,18 +113,21 @@ footer p{
     text-align: center;
 }
 
-.img__casin, .img__meteo, .img__amazon, .img__lulu{
-    width: 80px;
-    height: 80px;
-}
+
 a:hover{
-    color: rgb(99, 210, 243);
+    color: rgb(218, 205, 29);
 }
 .photo_dk, .lkd{
     margin-top: 50px ;
 }
-    
-    
+@media screen and (max-width : 443px){
+    .footer{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .photo_dk{
+        display: none;
+    }
 
-
-    
+}
