@@ -28,10 +28,9 @@ body{
 
 }
 header{
-    
     background-image: url("img/fond.jpg");
     background-size: 100% 100%;        
-    color: rgb(255, 255, 255);    
+    color: rgb(0, 0, 0);    
     text-align: center;  
     width: 98%;    
     overflow: hidden;  
@@ -55,13 +54,14 @@ a{
     
     list-style-type: none;             
     text-decoration: none;   
-    color:rgb(187,187,187);     
+    color:rgb(0, 0, 0);     
    
 
 } 
 .parcours{
     
     text-align: center;
+    text-decoration: underline;
 } 
 .histoire{
     
@@ -88,18 +88,29 @@ section{
 }
 .img__reservia:hover {
     transition: 0.4s ease-in-out;
-    transform: rotateY(360deg)
+    transform: scale(1.5)
+}
+.img__reservia:not(:hover) {
+    transition: 0.4s ease-in-out;
+}
+.img__food:hover {
+    transition: 0.4s ease-in-out;
+    transform: scale(1.3)
+}
+.img__food:not(:hover) {
+    transition: 0.4s ease-in-out;
 }
 
 .projets {    
     text-align: center;
+    text-decoration: underline;
 }
 
 .img1,.img2{
     display: flex;
     justify-content: space-around;
 }
-.img__casin, .img__meteo, .img__amazon, .img__lulu{
+.img__casin, .img__meteo, .img__food, .img__lulu{
     width: 80px;
     height: 80px;
 }
@@ -125,10 +136,15 @@ footer p{
     margin-top: auto;
     font-size: 1.3em;
     text-align: center;
+    
 }
 .photo_dk:hover {
     transition: 0.5s ease-in-out ;
-    transform: scale(1.5) translateY(-50px) rotateZ(360deg);
+    transform: scale(1.5) translateY(-20px) rotateZ(360deg);
+
+}
+.photo_dk:not(:hover) {
+    transition: 0.5s ease-in-out ;
 
 }
 .lkd:hover {
@@ -138,7 +154,7 @@ footer p{
 
 
 a:hover{
-    color: rgb(218, 205, 29);
+    color: rgb(234, 68, 240);
 }
 .photo_dk, .lkd{
     margin-top: 50px ;
