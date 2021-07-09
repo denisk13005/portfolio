@@ -159,14 +159,35 @@ a:hover{
 .photo_dk, .lkd{
     margin-top: 50px ;
 }
-.circle{
+.circle1{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.59);
+    position: absolute;
+    transform: translate(-10%, -10%);
+    transition: 0.1s ease;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    z-index: 3;
+}
+.circle2{
     width: 30px;
     height: 30px;
-    background-color: rgba(68, 240, 226,.6);
-    border-radius: 30px;
+    background-color: rgba(116, 117, 117, 0.59);
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(30%, 30%);
     transition: 0.2s ease;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    z-index: 2;
+}
+.circle3{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.59);
+    position: absolute;
+    transform: translate(100%, 120%);
+    transition: 0.3s ease;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    z-index: 1;
 }
 @media screen and (max-width : 443px){
     .footer{
