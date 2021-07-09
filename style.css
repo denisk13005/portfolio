@@ -159,6 +159,15 @@ a:hover{
 .photo_dk, .lkd{
     margin-top: 50px ;
 }
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(68, 240, 226,.6);
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease;
+}
 @media screen and (max-width : 443px){
     .footer{
         display: block;
